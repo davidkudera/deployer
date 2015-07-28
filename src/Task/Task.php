@@ -129,7 +129,7 @@ class Task
      * @param array|string $servers
      * @return $this
      */
-    public function onlyOn($servers)
+    public function onlyOn($servers = [])
     {
         $this->onlyOn = array_flip(is_array($servers) ? $servers : [$servers]);
         return $this;
